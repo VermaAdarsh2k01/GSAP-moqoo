@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: toto;
+    src: url(Heading-Now-Variable.ttf);
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.page1 video{
+    width: 90vw;
+    /* height: 100%; */
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.navbar img{
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+.nav-links a{
+    color: white;
+    font-family: toto;
+    font-weight: 150;
+    font-stretch: 1000%;
+    font-size: 1vw;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    z-index: 10;
+}
+.nav-links a:hover{
+    font-weight: 300;
+    color: #C8A2C8;
+}
+.scroll{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.scroll p{
+    text-transform: uppercase ;
+    font-size: 45vw;
+    font-family: toto;
+    font-weight: 999;
+    font-stretch: 260%;
+    color: white;
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page2-text-left{
+    width: 40vw;
+    height: 30vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    opacity: 0;
+}
+
+.page2-text-left p{
+    font-size: 80px;
+    font-family: toto;
+    font-weight: 400;
+    font-stretch: 700%;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.page2-text-right{
+    width: 40vw;
+    height: 30vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    opacity: 0;
+}
+.page2-text-right p{
+    font-size: 80px;
+    font-family: toto;
+    font-weight: 400;
+    font-stretch: 700%;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: end;
+}
+
+.page3{
+    min-height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+
+.hero1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.hero1 img{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    bottom: 0%;
+}
+
+.page4{
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.hero2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.hero2 img{
+    height: 100% ;
+    width: 60%;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    bottom: 0%;
+}
+
+.page5{
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.hero3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.hero3 img{
+    height: 100% ;
+    width: 60%;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    bottom: 0%;
+}
+
+.page6{
+    height: 100vh;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.moreCases{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.moreCases p{
+    font-family: toto;
+    font-weight: 700;
+    font-size: 50px;
+    font-stretch: 700%;
+    transition: all 0.5s ease;
+}
+.moreCases p:hover{
+    font-weight: 900;
+}
+
+.bottomtext{
+    display: flex;
+    flex-direction: column;
+    font-family: toto;
+    font-weight: 700;
+    font-size: 100px;
+    font-stretch: 700%;
+    padding-top: 100px;
+}
+
+.bottomtext p{
+    line-height: 0.8;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.bottomtext p:hover{
+    font-weight: 900;
+    
+}
+.footertext{
+    display: flex;
+    flex-direction: column;
+    font-family: toto;
+    font-weight: 400;
+    font-size: 20px;
+    font-stretch: 700%;
+}
+.footertext p{
+    line-height: 1;
+    text-transform: uppercase;
+}
